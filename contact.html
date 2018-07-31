@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>exercise 01</title>
+    <meta charset='utf-8'>
+    <meta name='description' content='my html5 course tutorial walkthrough'>
+    <meta name='keywords' content='HTML, CSS, Javascript'>
+    <meta name='author' content='elton'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='icon' href='./images/html5.png' type='image/png' sizes='16x16'>
+
+    <link rel='stylesheet' href='./css/main.css' type='text/css'>
+    <!--to link to external CSS styles to be included for this website.search "flaticon" for free icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <!--we are using from fontawesome remote server-->
+    <link rel='stylesheet' href='./css/test.css' type='text/css'>
+    <link rel='stylesheet' href='./css/form.css' type='text/css'>
+
+</head>
+
+<body>
+    <header>
+        <!--up to you whether want to add banner or images or menu in here. search "w3schools"-->
+        <figure>
+            <img src='./images/comworks.jpg' alt='Comworks Pte Ltd'>
+        </figure>
+    </header>
+
+    <div id='menubar' class='topnav'>
+        <a href='index.html'>Home</a>
+        <!--the 'a' tag, called Home, is a hyperlink tag on the website linking to index.html-->
+        <a href='news.html'>News</a>
+        <a class='active' href='contact.html'>Contact</a>
+        <a href='about.html'>About</a>
+
+        <div id='searchbar' class='search-container'>
+            <!--nested stylesheet-->
+            <form action='#action'>
+                <button type='submit'>
+                    <i class="fas fa-search fa-2x"></i>
+                    <!--fa-3x will mean 3x size-->
+                </button>
+                <input type='text' placeholder='Search this...' name='Search'>
+            </form>
+        </div>
+    </div>
+
+    <h1>Contact Us</h1>
+    <div>
+        <div class='column1 containerleft'>
+
+        </div>
+        <div class='column1 containermiddle'>
+            <form action='#' method='POST'>
+                <!--things that you want to post into a server-->
+                <div>
+                    <label class='formlabel' for='fname'>First Name</label>
+                    <input type='text' id='fname' class='formcss' name='fname' placeholder='Your first name...'>
+                </div>
+                <div>
+                    <label class='formlabel' for='lname'>Last Name</label>
+                    <input type='text' id='lname' class='formcss' name='lname' placeholder='Your last name...'>
+                </div>
+                <div>
+                    <i class="fas fa-envelope-square fa-2x"></i>
+                    <label class='formlabel' for='email'>Email</label>
+                    <input type='email' id- 'email' class='formcss' placeholder='Your email address...'>
+                </div>
+                <div>
+                    <i class="fas fa-globe fa-2x"></i>
+                    <label class='formlabel' for='country'>Country</label>
+                    <select id='country' class='formcss'>
+                        <option value='sg'>Singapore</option>
+                        <option value='my'>Malaysia</option>
+                        <option value='au'>Australia</option>
+                    </select>
+                </div>
+                <div>
+                    <i class="fas fa-file fa-2x" id='des'></i>
+                    <label id='des'class='formlabel' for='description'>Description</label>
+                    <textarea id='subject' class='formcss' rows='10'placeholder='Write something...'></textarea>
+                </div>
+                
+                <div class='lastdiv'>
+                        <input type='submit' value='Submit' class='formbutton'>
+                </div>
+                
+            </form>
+
+        </div>
+        <div class='column1 containerright'>
+
+        </div>
+    </div>
+
+    <footer class='footer'>
+        <div class='bottomrow'>
+            <div class='bottomcolumn'>
+                <a href='https://www.facebook.com'>
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                </a>
+
+                <a href='https://www.google.com'>
+                    <i class="fab fa-google fa-2x"></i>
+                </a>
+
+                <a href='https://www.twitter.com'>
+                    <i class="fab fa-twitter-square fa-2x"></i>
+                </a>
+            </div>
+        </div>
+        <small>&copy; Comworks Pte Ltd. 2018</small>
+    </footer>
+</body>
+
+</html>

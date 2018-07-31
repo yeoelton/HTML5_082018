@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.topnav{
+    background-color: #24251e;
+    overflow: hidden;
+} 
+
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px; /*top right bottom left. here, 14 to top and bottom, 16 to right and left */
+    text-decoration: none; 
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: #dddddd;
+    color: blue;
+}
+
+.topnav a.active{
+    background-color: blue;
+    color: aquamarine;
+}
+
+.topnav input[type=text]{
+    float: right;
+    padding: 6px; /* applies to t, l, b, r*/
+    margin-top: 8px;
+    margin-right: 16px;
+    border: 0px; /* only if we want a border*/
+    font-size: 17px; 
+}
+
+.topnav .search-container{
+    float: right; 
+}
+
+.topnav .search-container button{
+    float: right; 
+    margin-left: 0px;
+    margin-right: 16px;
+    margin-top: 8px;
+    cursor: pointer; 
+}
+
+.topnav .search-container button:hover{
+    background: #cccccc;
+}
+
+@media screen and (max-width:600px){
+    .topnav .search-container {
+        float: none; 
+    }
+
+    .topnav a, .topnav input[type=text], .topnav .search-container button, .roworigin{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%; 
+        margin: 0; 
+        padding: 14px; 
+    }
+
+}
+
+.footer{
+    position: fixed;
+    bottom: 0; 
+    background-color:#dddddd;
+    width: 100%;
+    color: white; 
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+}
+
+
+.footer .bottomrow .bottomcolumn a{
+    /*color: rgb(35, 52, 202);*/
+    padding: 10px; 
+    text-align: center; 
+}
+
+
+#fb, #gl, #tw{
+    color: rgb(35, 52, 202);
+    padding: 10px; 
+    text-align: center; 
+}
+
+.bottomrow{
+    content:'';
+    display: block; 
+    clear: both;
+}
+.bottomcolumn{
+    padding: 10px;
+}
+
+.row{
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px; 
+    margin: 10px 10px 10px 10px;
+}
+
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    background-color: cyan;
+}
+
+.left{
+    width: 15%; 
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.right{ 
+    width: 75%;
+    margin: 10px 10px 10px 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lastdiv{
+    margin-bottom: 100px;
+}
+
+.footer a{
+    text-decoration: none; 
+}
+/* if referring to ID, then use #nameofID */
+
+.roworigin{
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    clear: both;
+}
+
+.twocolumn{
+    float: left;
+    width: 45%;
+    padding: 10px;
+}
+
+table{
+    width: 100%;
+    border: 2px solid blue;
+    border-spacing: 0;
+    border-collapse: collpse; 
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+a:link{
+    color: green;
+    text-decoration: none;
+    background-color: transparent; 
+}
+
+a:hover{
+    color: red;
+    background-color: aquamarine;
+    text-decoration: underline
+}
+
+/* a:visited{
+    color: rgb(178, 212, 27);
+    background-color: transparent;
+    text-decoration: :none;
+} */

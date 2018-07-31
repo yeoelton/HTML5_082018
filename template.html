@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>exercise 01</title>
+    <meta charset='utf-8'>
+    <meta name='description' content='my html5 course tutorial walkthrough'>
+    <meta name='keywords' content='HTML, CSS, Javascript'>
+    <meta name='author' content='elton'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='icon' href='./images/html5.png' type='image/png' sizes='16x16'>
+
+    <link rel='stylesheet' href='./css/main.css' type='text/css'>
+    <!--to link to external CSS styles to be included for this website.search "flaticon" for free icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <!--we are using from fontawesome remote server-->
+    <link rel='stylesheet' href='./css/test.css' type='text/css'>
+
+</head>
+
+<body>
+    <header>
+        <!--up to you whether want to add banner or images or menu in here. search "w3schools"-->
+        <figure>
+            <img src='./images/comworks.jpg' alt='Comworks Pte Ltd'>
+        </figure>
+    </header>
+
+    <div id='menubar' class='topnav'>
+        <a class='active' href='index.html'>Home</a>
+        <!--the 'a' tag, called Home, is a hyperlink tag on the website linking to index.html-->
+        <a href='news.html'>News</a>
+        <a href='contact.html'>Contact</a>
+        <a href='about.html'>About</a>
+
+        <div id='searchbar' class='search-container'>
+            <!--nested stylesheet-->
+            <form action='#action'>
+                <button type='submit'>
+                    <i class="fas fa-search fa-2x"></i>
+                    <!--fa-3x will mean 3x size-->
+                </button>
+                <input type='text' placeholder='Search this...' name='Search'>
+            </form>
+        </div>
+    </div>
+
+    <footer class='footer'>
+        <div class='bottomrow'>
+            <div class='bottomcolumn'>
+                <a href='https://www.facebook.com'>
+                    <i id="fb" class="fab fa-facebook-f fa-2x"></i>
+                </a>
+
+                <a href='https://www.google.com'>
+                    <i id="gl" class="fab fa-google fa-2x"></i>
+                </a>
+
+                <a href='https://www.twitter.com'>
+                    <i id="tw" class="fab fa-twitter-square fa-2x"></i>
+                </a>
+            </div>
+        </div>
+        <small>&copy; Comworks Pte Ltd. 2018</small>
+    </footer>
+</body>
+
+</html>
