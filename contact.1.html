@@ -18,7 +18,6 @@
     <!--we are using from fontawesome remote server-->
     <link rel='stylesheet' href='./css/test.css' type='text/css'>
     <link rel='stylesheet' href='./css/form.css' type='text/css'>
-    <link rel='stylesheet' href='./css/contact.css' type='text/css'>
 
 </head>
 
@@ -55,23 +54,20 @@
 
         </div>
         <div class='column1 containermiddle'>
-            <form class='contactform' action='#' method='POST'>
+            <form action='#' method='POST'>
                 <!--things that you want to post into a server-->
                 <div>
                     <label class='formlabel' for='fname'>First Name</label>
-                    <input type='text' id='fname' class='formcss' name='fname' placeholder='Your first name...' required>
-                    <span class='formhint'>First Name is required</span>
+                    <input type='text' id='fname' class='formcss' name='fname' placeholder='Your first name...'>
                 </div>
                 <div>
                     <label class='formlabel' for='lname'>Last Name</label>
-                    <input type='text' id='lname' class='formcss' name='lname' placeholder='Your last name...' required>
-                    <span class='formhint'>Last Name is required</span>
+                    <input type='text' id='lname' class='formcss' name='lname' placeholder='Your last name...'>
                 </div>
                 <div>
                     <i class="fas fa-envelope-square fa-2x"></i>
                     <label class='formlabel' for='email'>Email</label>
-                    <input type='email' id- 'email' class='formcss' placeholder='Your email address...' required>
-                    <span class='formhint'>Enter valid email format</span>
+                    <input type='email' id- 'email' class='formcss' placeholder='Your email address...'>
                 </div>
                 <div>
                     <i class="fas fa-globe fa-2x"></i>
@@ -89,7 +85,7 @@
                 </div>
                 
                 <div class='lastdiv'>
-                        <button type='submit' value='Submit' class='formbutton'>Submit</button>
+                        <input type='submit' value='Submit' class='formbutton'>
                 </div>
                 
             </form>

@@ -1,0 +1,64 @@
+.contactform label{
+    width: 130px;
+    display: block; 
+    text-align: left;
+    vertical-align: top; 
+}
+
+.contactform input, .contactform textarea, .contactform #country{
+    width: 600px;
+    height:20px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 3px grey, 0px 10px 15px grey inset; /*refer to x, y, and z axes*/
+    -moz-transition: padding 1s;
+    -webkit-transition: padding 1s;
+    transition: padding 1s;
+}
+
+.contactform input:focus, .contactform textarea:focus, .contactform #country:focus{
+    background: white;
+    border: 1px solid darkslategray;
+    box-shadow: 0px 0px 3px grey; 
+    padding-right: 35px;
+}
+
+.contactform input:required, .contactform textarea:required {
+    background: white url('../images/red_asterisk.png') no-repeat 98% center;
+}
+
+.contactform input:valid{
+    background: white url('../images/valid.png') no-repeat 98% center;
+    border-color: greenyellow;
+}
+
+.contactform input:invalid{
+    background: white url('../images/invalid.png') no-repeat 98% center;
+    border-color:red;
+}
+
+.contactform input:focus + .formhint{
+    display: inline;
+}
+
+.contactform input:required:valid + .formhint{
+    display: none;
+}
+
+.formhint{
+    font-size: 10px;
+    background: red; 
+    border-radius: 3px;
+    color: yellow; 
+    margin-left: 5px;
+    padding: 1px 5px; /*first applies to top and bottom, second to left and right*/
+    position: absolute;
+    display: none;
+}
+
+.formhint:before{
+    content:'\25C0';
+    position: absolute;
+    color:red;
+    top:1px;
+    left:-6px;
+}
