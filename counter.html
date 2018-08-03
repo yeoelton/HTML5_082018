@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Javascript Counter</title>
+    <script lang='javascript' type='text/javascript'>
+
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10); /*modulus will take the value only, not remainder*/
+
+                /*if minutes less than 10, then do what is on the left i.e. display 0+minutes. if not, just minutes*/
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                display.textContent = minutes + ':' + seconds;
+
+                timer = timer - 1;
+
+                if (timer < 0) {
+                    timer = duration;
+                }
+
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fourMinutes = 60 * 4;
+            var disp = document.querySelector('#counttime');
+            startTimer(fourMinutes, disp);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Registration closes in
+            <span id='counttime'>04:00</span> minutes
+        </h1>
+    </div>
+</body>
+
+</html>
